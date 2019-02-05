@@ -1,7 +1,7 @@
 @extends('layouts.kexiaoqiDefault')
 @section('content')
   <h4>请回答柯晓齐</h4>
-  		@include('users.shared._errors')
+  		@include('kexiaoqi._error')
         <form method="POST" action="{{ route('kexiaoqiResult') }}">
 		{{ csrf_field() }}
         <div class="form-group">
