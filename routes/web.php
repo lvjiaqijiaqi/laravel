@@ -22,3 +22,6 @@ Route::get('/signup', 'UsersController@create')->name('signup');
 Route::get('login', 'SessionsController@create')->name('login');
 Route::post('login', 'SessionsController@store')->name('login');
 Route::delete('logout', 'SessionsController@destroy')->name('logout');
+
+Route::get('/kexiaoqi/home', 'KexiaoqiController@home')->name('kexiaoqiHome');
+Route::post('/kexiaoqi/result', 'KexiaoqiController@result')->name('kexiaoqiResult');
