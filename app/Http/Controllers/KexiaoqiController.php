@@ -14,7 +14,7 @@ class KexiaoqiController extends Controller
     {
     	$input = $request->name;
     	if ($input == "死猪") {
-    		return "晚安，笨蛋";
+    		return view('kexiaoqi/result');
     	}
     	return back()->withErrors(['错啦,亲']);
     }
