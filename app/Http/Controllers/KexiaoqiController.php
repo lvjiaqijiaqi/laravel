@@ -18,4 +18,8 @@ class KexiaoqiController extends Controller
     	}
     	return back()->withErrors(['错啦,亲']);
     }
+    public function echo(Request $request)
+    {
+        return view('kexiaoqi/echo');
+    }
 }
