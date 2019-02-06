@@ -13,7 +13,7 @@ class KexiaoqiController extends Controller
 	public function result(Request $request)
     {
     	$input = $request->name;
-    	if ($input == "死猪") {
+    	if ($input == "猪") {
     		return view('kexiaoqi/result');
     	}
     	return back()->withErrors(['错啦,亲']);
