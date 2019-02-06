@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Visites;
 
 class KexiaoqiController extends Controller
 {
@@ -21,5 +22,10 @@ class KexiaoqiController extends Controller
     public function echo(Request $request)
     {
         return view('kexiaoqi/echo');
+    }
+    public function list(Request $request)
+    {
+        $visites = Visites::where('id', '>', 0)->orderBy('id', 'desc')->get();
+        return view('kexiaoqi/list', compact('visites'));
     }
 }

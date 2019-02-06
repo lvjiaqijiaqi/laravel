@@ -26,3 +26,4 @@ Route::delete('logout', 'SessionsController@destroy')->name('logout');
 Route::get('/kexiaoqi/home', 'KexiaoqiController@home')->name('kexiaoqiHome');
 Route::post('/kexiaoqi/result', 'KexiaoqiController@result')->name('kexiaoqiResult');
 Route::post('/kexiaoqi/echo', 'KexiaoqiController@echo')->name('kexiaoqiEcho');
+Route::get('/kexiaoqi/list', 'KexiaoqiController@list')->name('kexiaoqiList');
